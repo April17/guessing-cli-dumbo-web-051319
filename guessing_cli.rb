@@ -2,6 +2,7 @@ require "pry"
 def run_guessing_game
   input = ""
   for i in 0..5
+    puts "Guess a number between 1 and 6."
     input = ""
     ranNumber = rand(1..6)
     input = gets.downcase.strip
