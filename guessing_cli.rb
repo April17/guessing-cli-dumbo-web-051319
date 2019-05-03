@@ -5,12 +5,10 @@ def run_guessing_game
   ranNumber = rand(1..6)
   for i in 0..1
     input = gets.downcase.strip
-    binding.pry
     if input == "exit"
       puts "Goodbye!"
       break
-    elsif condition
-     input == ranNumber.to_s
+    elsif input == ranNumber.to_s
       puts "You guessed the correct number!"
     elsif input != ranNumber.to_s
       puts "The computer guessed #{ranNumber}."
