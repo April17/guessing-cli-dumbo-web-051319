@@ -11,7 +11,7 @@ def run_guessing_game
     elsif input.to_i != ranNumber
       puts "The computer guessed #{ranNumber}."
     elsif input == "exit"
-      "Goodbye!"
+      puts "Goodbye!"
       break
     else
       nil
