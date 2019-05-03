@@ -4,8 +4,7 @@ def run_guessing_game
   ranNumber = rand(1..6)
   for i in 0..5
     puts "Guess a number between 1 and 6."
-    input = ""
-
+    input = "exit"
     input = gets.downcase.strip
     if input.to_i == ranNumber
       puts "You guessed the correct number!"
