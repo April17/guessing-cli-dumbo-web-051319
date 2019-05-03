@@ -10,9 +10,9 @@ def run_guessing_game
       puts "Goodbye!"
       break
     elsif condition
-     input.to_i == ranNumber
+     input == ranNumber.to_s
       puts "You guessed the correct number!"
-    elsif input.to_i != ranNumber
+    elsif input != ranNumber.to_s
       puts "The computer guessed #{ranNumber}."
     else
       nil
