@@ -1,7 +1,7 @@
 require "pry"
 def run_guessing_game
   input = ""
-  while input
+  for i in 0..5
     input = ""
     ranNumber = rand(1..6)
     input = gets.downcase.strip
