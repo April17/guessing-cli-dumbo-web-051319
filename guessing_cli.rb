@@ -7,13 +7,14 @@ def run_guessing_game
     input = gets.downcase.strip
     input = "exit"
     binding.pry
-    if input.to_i == ranNumber
+    if input == "exit"
+      puts "Goodbye!"
+      break
+    elsif condition
+     input.to_i == ranNumber
       puts "You guessed the correct number!"
     elsif input.to_i != ranNumber
       puts "The computer guessed #{ranNumber}."
-    elsif input == "exit"
-      puts "Goodbye!"
-      break
     else
       nil
     end
