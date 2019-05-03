@@ -5,7 +5,7 @@ def run_guessing_game
   for i in 0..5
     puts "Guess a number between 1 and 6."
     input = "exit"
-    input = gets.downcase.strip
+    binding.pry
     if input.to_i == ranNumber
       puts "You guessed the correct number!"
     elsif input.to_i != ranNumber
