@@ -4,7 +4,7 @@ def run_guessing_game
   puts "Guess a number between 1 and 6."
   ranNumber = rand(1..6)
   for i in 0..1
-
+    input = gets.downcase.strip
     input = "exit"
     binding.pry
     if input.to_i == ranNumber
