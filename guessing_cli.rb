@@ -5,7 +5,6 @@ def run_guessing_game
   ranNumber = rand(1..6)
   for i in 0..1
     input = gets.downcase.strip
-    input = "exit"
     binding.pry
     if input == "exit"
       puts "Goodbye!"
